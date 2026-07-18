@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamed Harchaoui | Full Stack Web Developer</title>
+<meta name="description" content="Portfolio of Mohamed Harchaoui, a Full Stack Web Developer specializing in PHP, MySQL, JavaScript and Bootstrap.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<!-- AOS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom Cursor Glow -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- Preloader -->
+<div class="preloader" id="preloader">
+  <div class="preload-mark">
+    <span></span><span></span><span></span><span></span>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Mohamed<span class="dot">.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link btn-nav-cta" href="#contact">Let's Talk</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="home" class="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right" data-aos-duration="900">
+        <p class="eyebrow"><span class="eyebrow-diamond">◆</span> Available for freelance work</p>
+        <h1 class="hero-title">Hello, I'm <span class="text-accent">Mohamed Harchaoui</span></h1>
+        <h2 class="hero-subtitle"><span id="typed-text"></span><span class="cursor-blink">|</span></h2>
+        <p class="hero-desc">I build modern, responsive and secure web applications using PHP, MySQL, JavaScript and Bootstrap.</p>
+        <div class="hero-btns">
+          <a href="#" class="btn btn-accent" id="downloadCvBtn"><i class="fa-solid fa-download"></i> Download CV</a>
+          <a href="#contact" class="btn btn-outline-accent">Contact Me</a>
+        </div>
+        <div class="hero-socials">
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-left" data-aos-duration="900">
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-ring"></div>
+          <img src="profile.png" alt="Mohamed Harchaoui" class="hero-photo">
+          <div class="hero-badge"><i class="fa-solid fa-code"></i> Full Stack Dev</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-indicator" aria-label="Scroll down"><span></span></a>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-heading" data-aos="fade-up">
+      <p class="eyebrow"><span class="eyebrow-diamond">◆</span> About Me</p>
+      <h2>Who I Am</h2>
+    </div>
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="about-photo-wrap">
+          <img src="profile.png" alt="Mohamed Harchaoui portrait" class="about-photo">
+          <div class="about-exp-badge">
+            <span class="num">3+</span>
+            <span class="label">Years of<br>Experience</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <p class="about-bio">
+          I'm a Full Stack Web Developer focused on building clean, reliable and secure applications from
+          the database up to the interface. I enjoy turning complex business requirements into simple,
+          maintainable code, and I care as much about the structure behind a page as I do about how it
+          feels to use. My toolkit centers on PHP and MySQL for solid backends, paired with JavaScript
+          and Bootstrap to craft interfaces that are fast, responsive, and easy on the eye.
+        </p>
+        <div class="row g-3 about-info">
+          <div class="col-sm-6">
+            <div class="info-card glass"><i class="fa-solid fa-user"></i><div><span class="label">Name</span><span class="value">Mohamed Harchaoui</span></div></div>
+          </div>
+          <div class="col-sm-6">
+            <div class="info-card glass"><i class="fa-solid fa-cake-candles"></i><div><span class="label">Age</span><span class="value">24 Years</span></div></div>
+          </div>
+          <div class="col-sm-6">
+            <div class="info-card glass"><i class="fa-solid fa-location-dot"></i><div><span class="label">Country</span><span class="value">Morocco</span></div></div>
+          </div>
+          <div class="col-sm-6">
+            <div class="info-card glass"><i class="fa-solid fa-envelope"></i><div><span class="label">Email</span><span class="value">contact@mharchaoui.dev</span></div></div>
+          </div>
+          <div class="col-sm-6">
+            <div class="info-card glass"><i class="fa-solid fa-graduation-cap"></i><div><span class="label">Education</span><span class="value">B.Sc. Computer Science</span></div></div>
+          </div>
+          <div class="col-sm-6">
+            <div class="info-card glass"><i class="fa-solid fa-briefcase"></i><div><span class="label">Experience</span><span class="value">3+ Years</span></div></div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-accent mt-4"><i class="fa-solid fa-download"></i> Download CV</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section section-alt">
+  <div class="container">
+    <div class="section-heading" data-aos="fade-up">
+      <p class="eyebrow"><span class="eyebrow-diamond">◆</span> My Skills</p>
+      <h2>Technologies I Work With</h2>
+    </div>
+    <div class="row g-4" id="skillsWrap">
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
+        <div class="skill-item"><div class="skill-top"><span>HTML5</span><span class="skill-pct">95%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div></div>
+      </div>
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="50">
+        <div class="skill-item"><div class="skill-top"><span>CSS3</span><span class="skill-pct">92%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div></div>
+      </div>
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="skill-item"><div class="skill-top"><span>JavaScript</span><span class="skill-pct">88%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div>
+      </div>
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
+        <div class="skill-item"><div class="skill-top"><span>PHP</span><span class="skill-pct">90%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+      </div>
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="skill-item"><div class="skill-top"><span>MySQL</span><span class="skill-pct">87%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="87"></div></div></div>
+      </div>
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
+        <div class="skill-item"><div class="skill-top"><span>Bootstrap</span><span class="skill-pct">93%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="93"></div></div></div>
+      </div>
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="skill-item"><div class="skill-top"><span>Git</span><span class="skill-pct">85%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+      </div>
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="350">
+        <div class="skill-item"><div class="skill-top"><span>Responsive Design</span><span class="skill-pct">94%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="94"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="container">
+    <div class="section-heading" data-aos="fade-up">
+      <p class="eyebrow"><span class="eyebrow-diamond">◆</span> Services</p>
+      <h2>What I Can Do For You</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-card glass">
+          <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Web Development</h3>
+          <p>Full website builds from the ground up — structured, fast, and built to scale with your needs.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card glass">
+          <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <h3>Responsive Design</h3>
+          <p>Interfaces that adapt cleanly across phones, tablets and desktops without losing polish.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card glass">
+          <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+          <h3>Backend Development</h3>
+          <p>Secure, well-structured PHP backends that handle logic and data with reliability.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-card glass">
+          <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+          <h3>Database Design</h3>
+          <p>Well-normalized MySQL schemas that keep your data consistent as your app grows.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card glass">
+          <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3>UI Improvements</h3>
+          <p>Refining existing interfaces for clarity, consistency, and a more premium feel.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card glass">
+          <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+          <h3>Website Maintenance</h3>
+          <p>Ongoing updates, fixes and monitoring to keep your site running smoothly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section section-alt">
+  <div class="container">
+    <div class="section-heading" data-aos="fade-up">
+      <p class="eyebrow"><span class="eyebrow-diamond">◆</span> Portfolio</p>
+      <h2>Selected Projects</h2>
+    </div>
+    <div class="filter-bar" data-aos="fade-up">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="webapps">Web Apps</button>
+      <button class="filter-btn" data-filter="php">PHP</button>
+      <button class="filter-btn" data-filter="ui">UI Design</button>
+    </div>
+    <div class="row g-4" id="portfolioGrid">
+
+      <div class="col-lg-4 col-md-6 portfolio-item" data-cat="webapps php" data-aos="zoom-in">
+        <div class="project-card glass">
+          <div class="project-thumb thumb-1"><i class="fa-solid fa-dumbbell"></i></div>
+          <div class="project-body">
+            <h3>Gym Management System</h3>
+            <p class="tech">PHP · MySQL · Bootstrap</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-accent">Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline-accent"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item" data-cat="webapps php" data-aos="zoom-in" data-aos-delay="50">
+        <div class="project-card glass">
+          <div class="project-thumb thumb-2"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="project-body">
+            <h3>Student Management System</h3>
+            <p class="tech">PHP · MySQL · JavaScript</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-accent">Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline-accent"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item" data-cat="ui webapps" data-aos="zoom-in" data-aos-delay="100">
+        <div class="project-card glass">
+          <div class="project-thumb thumb-3"><i class="fa-solid fa-id-card"></i></div>
+          <div class="project-body">
+            <h3>Portfolio Website</h3>
+            <p class="tech">HTML5 · CSS3 · Bootstrap</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-accent">Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline-accent"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item" data-cat="php ui" data-aos="zoom-in">
+        <div class="project-card glass">
+          <div class="project-thumb thumb-4"><i class="fa-solid fa-right-to-bracket"></i></div>
+          <div class="project-body">
+            <h3>Login System</h3>
+            <p class="tech">PHP · MySQL · Sessions</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-accent">Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline-accent"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item" data-cat="webapps php" data-aos="zoom-in" data-aos-delay="50">
+        <div class="project-card glass">
+          <div class="project-thumb thumb-5"><i class="fa-solid fa-table-list"></i></div>
+          <div class="project-body">
+            <h3>CRUD Application</h3>
+            <p class="tech">PHP · MySQL · AJAX</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-accent">Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline-accent"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item" data-cat="ui webapps" data-aos="zoom-in" data-aos-delay="100">
+        <div class="project-card glass">
+          <div class="project-thumb thumb-6"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="project-body">
+            <h3>Dashboard</h3>
+            <p class="tech">JavaScript · Chart.js · Bootstrap</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-accent">Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline-accent"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="section">
+  <div class="container">
+    <div class="section-heading" data-aos="fade-up">
+      <p class="eyebrow"><span class="eyebrow-diamond">◆</span> Resume</p>
+      <h2>My Journey</h2>
+    </div>
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <h3 class="timeline-title" data-aos="fade-up"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-up">
+            <span class="timeline-dot"></span>
+            <span class="timeline-date">2019 — 2022</span>
+            <h4>B.Sc. Computer Science</h4>
+            <p>Focused on software engineering, databases and web technologies.</p>
+          </div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <span class="timeline-dot"></span>
+            <span class="timeline-date">2017 — 2019</span>
+            <h4>Diploma in IT</h4>
+            <p>Foundations in programming logic, networking and systems.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h3 class="timeline-title" data-aos="fade-up"><i class="fa-solid fa-briefcase"></i> Experience</h3>
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-up">
+            <span class="timeline-dot"></span>
+            <span class="timeline-date">2023 — Present</span>
+            <h4>Full Stack Developer</h4>
+            <p>Building and maintaining web applications with PHP, MySQL and JavaScript.</p>
+          </div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <span class="timeline-dot"></span>
+            <span class="timeline-date">2022 — 2023</span>
+            <h4>Junior Web Developer</h4>
+            <p>Developed responsive front-end interfaces and assisted backend integration.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h3 class="timeline-title" data-aos="fade-up"><i class="fa-solid fa-certificate"></i> Certificates</h3>
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-up">
+            <span class="timeline-dot"></span>
+            <span class="timeline-date">2023</span>
+            <h4>PHP Backend Development</h4>
+            <p>Advanced server-side development and API design.</p>
+          </div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <span class="timeline-dot"></span>
+            <span class="timeline-date">2022</span>
+            <h4>Responsive Web Design</h4>
+            <p>Modern CSS, Flexbox, Grid and mobile-first design principles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATISTICS -->
+<section class="section stats-section">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-6 col-lg-3" data-aos="fade-up">
+        <div class="stat-card">
+          <i class="fa-solid fa-diagram-project"></i>
+          <h3><span class="counter" data-target="45">0</span>+</h3>
+          <p>Projects Completed</p>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-card">
+          <i class="fa-solid fa-face-smile"></i>
+          <h3><span class="counter" data-target="30">0</span>+</h3>
+          <p>Happy Clients</p>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat-card">
+          <i class="fa-solid fa-hourglass-half"></i>
+          <h3><span class="counter" data-target="3">0</span>+</h3>
+          <p>Years of Experience</p>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="stat-card">
+          <i class="fa-solid fa-layer-group"></i>
+          <h3><span class="counter" data-target="12">0</span>+</h3>
+          <p>Technologies</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="section section-alt">
+  <div class="container">
+    <div class="section-heading" data-aos="fade-up">
+      <p class="eyebrow"><span class="eyebrow-diamond">◆</span> Testimonials</p>
+      <h2>What Clients Say</h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8" data-aos="fade-up">
+        <div id="testiCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testi-card glass">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p>"Mohamed delivered our management system ahead of schedule. Clean code, clear communication, and great attention to detail."</p>
+                <div class="testi-author">
+                  <div class="testi-avatar">RA</div>
+                  <div><h5>Rachid Amrani</h5><span>Business Owner</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testi-card glass">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p>"Professional, responsive and genuinely skilled. The dashboard he built made our internal reporting so much easier."</p>
+                <div class="testi-author">
+                  <div class="testi-avatar">SL</div>
+                  <div><h5>Sara Lahlou</h5><span>Project Manager</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testi-card glass">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p>"Great eye for design and solid backend skills. He turned our idea into a working product in weeks, not months."</p>
+                <div class="testi-author">
+                  <div class="testi-avatar">YB</div>
+                  <div><h5>Youssef Bennani</h5><span>Startup Founder</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testiCarousel" data-bs-slide="prev">
+            <span class="testi-nav"><i class="fa-solid fa-chevron-left"></i></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testiCarousel" data-bs-slide="next">
+            <span class="testi-nav"><i class="fa-solid fa-chevron-right"></i></span>
+          </button>
+          <div class="carousel-indicators testi-indicators">
+            <button type="button" data-bs-target="#testiCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#testiCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#testiCarousel" data-bs-slide-to="2"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-heading" data-aos="fade-up">
+      <p class="eyebrow"><span class="eyebrow-diamond">◆</span> Contact</p>
+      <h2>Let's Work Together</h2>
+    </div>
+    <div class="row g-5">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="contact-info-card glass">
+          <div class="contact-info-item">
+            <i class="fa-solid fa-phone"></i>
+            <div><span class="label">Phone</span><span class="value">+212 6 00 00 00 00</span></div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div><span class="label">Email</span><span class="value">contact@mharchaoui.dev</span></div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div><span class="label">Location</span><span class="value">Casablanca, Morocco</span></div>
+          </div>
+          <div class="map-embed">
+            <iframe src="https://www.google.com/maps?q=Casablanca,Morocco&output=embed" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Location Map"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <form class="contact-form glass" id="contactForm">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="col-12">
+              <input type="text" class="form-control" placeholder="Subject" required>
+            </div>
+            <div class="col-12">
+              <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-accent w-100">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+              <p class="form-note" id="formNote"></p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <a href="#home" class="footer-logo">Mohamed<span class="dot">.</span></a>
+      <div class="footer-socials">
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">&copy; <span id="year"></span> Mohamed Harchaoui. All rights reserved.</p>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
